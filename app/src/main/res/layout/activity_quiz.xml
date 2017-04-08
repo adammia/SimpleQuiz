@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    style="@style/CollapsingToolbarLayout"
+    android:fitsSystemWindows="false"
+    android:gravity="bottom"
+    tools:context=".QuizActivity">
+
+
+    <android.support.design.widget.AppBarLayout style="@style/appBarLayout">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            style="@style/CollapsingToolbarLayout"
+            android:layout_height="@dimen/appbarHeight"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="5dp"
+            app:expandedTitleMarginStart="16dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                style="@style/collapseImage"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e6eae6"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/match_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Q1_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q1" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <CheckBox
+                        android:id="@+id/Q11b"
+                        style="@style/answerStyle"
+                        android:text="Set of design principles and style"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q12b"
+                        style="@style/answerStyle"
+                        android:text="Visual design language, by Google"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q13b"
+                        style="@style/answerStyle"
+                        android:text="Static, never changing tools"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q14b"
+                        style="@style/answerStyle"
+                        android:text="Based on paper and scissors"
+                        android:textColor="@color/colorText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q2_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q2" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/Q21t"
+                            style="@style/answerStyle"
+                            android:text="True" />
+
+                        <RadioButton
+                            android:id="@+id/Q22f"
+                            style="@style/answerStyle"
+                            android:text="False" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q3_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q3" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <CheckBox
+                        android:id="@+id/Q31b"
+                        style="@style/answerStyle"
+                        android:text="Unified experience"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q32b"
+                        style="@style/answerStyle"
+                        android:text="First-class input methods"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q33b"
+                        style="@style/answerStyle"
+                        android:text="Provides different experience"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q34b"
+                        style="@style/answerStyle"
+                        android:text="Using for generating revenue"
+                        android:textColor="@color/colorText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q4_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q4" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/Q41r"
+                            style="@style/answerStyle"
+                            android:text="Status bar" />
+
+                        <RadioButton
+                            android:id="@+id/Q42r"
+                            style="@style/answerStyle"
+                            android:text="App bar" />
+
+                        <RadioButton
+                            android:id="@+id/Q43r"
+                            style="@style/answerStyle"
+                            android:text="Toolbar" />
+
+                        <RadioButton
+                            android:id="@+id/Q44r"
+                            style="@style/answerStyle"
+                            android:text="Icebar" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q5_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q5" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <CheckBox
+                        android:id="@+id/Q51b"
+                        style="@style/answerStyle"
+                        android:text="Tactilereality"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q52b"
+                        style="@style/answerStyle"
+
+                        android:text="Deliberate color choices"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q53b"
+                        style="@style/answerStyle"
+                        android:text="Guide visual treatments"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q54b"
+                        style="@style/answerStyle"
+                        android:text="Motions is meaningless"
+                        android:textColor="@color/colorText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q6_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q6" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/Q61r"
+                            style="@style/answerStyle"
+                            android:text="Confusing, fast, unclear" />
+
+                        <RadioButton
+                            android:id="@+id/Q62r"
+                            style="@style/answerStyle"
+                            android:text="Quick, clear, cohesive" />
+
+                        <RadioButton
+                            android:id="@+id/Q63r"
+                            style="@style/answerStyle"
+                            android:text="Slow, no focus, distraction" />
+
+                        <RadioButton
+                            android:id="@+id/Q64r"
+                            style="@style/answerStyle"
+                            android:text="Meaningfulness, incoherent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/Q7_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q7" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <EditText
+                        android:id="@+id/Q7answer"
+                        style="@style/edit_text"
+                        android:hint="Your answer" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/Q8_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q8" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <CheckBox
+                        android:id="@+id/Q81b"
+                        style="@style/answerStyle"
+                        android:text="Material has uniform thickness"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q82b"
+                        style="@style/answerStyle"
+                        android:text="Material cannot change shape"
+                        android:textColor="@color/colorText" />
+
+                    <CheckBox
+                        android:id="@+id/Q83b"
+                        style="@style/answerStyle"
+                        android:text="Material lives in a digital world"
+                        android:textColor="@color/colorText" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q9_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q9" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/Q91t"
+                            style="@style/answerStyle"
+                            android:text="True" />
+
+                        <RadioButton
+                            android:id="@+id/Q92f"
+                            style="@style/answerStyle"
+                            android:text="False" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q10_text"
+                    style="@style/sample_header_text"
+                    android:text="@string/Q10" />
+
+                <LinearLayout style="@style/questionBox">
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/Q101t"
+                            style="@style/answerStyle"
+                            android:text="True" />
+
+                        <RadioButton
+                            android:id="@+id/Q102f"
+                            style="@style/answerStyle"
+                            android:text="False" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/match_layout"
+                    android:layout_gravity="center_horizontal">
+
+
+                    <Button
+                        android:id="@+id/button_submit_question"
+                        style="@style/btn_style"
+                        android:onClick="showResult"
+                        android:text="SUBMIT ANSWERS" />
+
+                    <Button
+                        android:id="@+id/button_try_again"
+                        style="@style/btn_style"
+                        android:onClick="tryAgain"
+                        android:text="BACK TO START AGAIN !"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

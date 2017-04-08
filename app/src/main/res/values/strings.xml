@@ -1,0 +1,45 @@
+<resources>
+    <string name="title">Material Design Quiz</string>
+    <string name="app_name">Material Design Quiz</string>
+    <string name="intro0">How Well Do You Know Material Design?</string>
+    <string name="hello">"This is a simple quiz, to test your knowledge! Don't forget you can find help above in the menu!"</string>
+    <string name="intro1">Material Design is a unified system that combines theory, resources, and tools for crafting digital experiences.</string>
+    <string name="menu1">MD Guidelines</string>
+    <string name="menu2">Design palette</string>
+    <string name="material_io_link">https://www.material.io/</string>
+    <string name="material_tools_link">https://www.materialpalette.com/</string>
+    <string name="start_quiz">Getting to Know, Start Quiz !</string>
+    <string name="want_toquit">Are you sure you want to quit?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="Q1">"Question Number: 1/10. \nWhat is the Material Design?"</string>
+    <string name="Q2">"Question Number: 2/10. \nDevelopers can use Material Design to create apps, but not ChromeOS."</string>
+    <string name="Q3">"Question Number: 3/10. \nWhat are the Material Design main goals?"</string>
+    <string name="Q4">"Question Number: 4/10. \nWhich component is best used for branding purposes?"</string>
+    <string name="Q5">"Question Number: 5/10. \nWhat is the basic principles? "</string>
+    <string name="Q6">"Question Number: 6/10. \nWhat makes a good transition: The motion are..."</string>
+    <string name="Q7">"Question Number: 7/10. \nDialogs contain text and UI controls. They retain focus until dismissed or a required action has been taken. The main used dialog is:"</string>
+    <string name="Q8">"Question Number: 8/10. \nWhich Material properties are true?"</string>
+    <string name="Q9">"Question Number: 9/10. \nMaterial design is a 3D environment not containing cast shadows"</string>
+    <string name="Q10">"Question Number: 10/10. \nA grid list is best suited to presenting homogenous data, typically images"</string>
+    <string name="edittext_rightanswer">The right answer: alert</string>
+    <string name="best_100">100% You are the best! Your score is:</string>
+    <string name="congrat">/10. Congratulations!</string>
+    <string name="perfect_90">90% Almost perfect score! Your score is:</string>
+    <string name="congrats">/10. Congratulations!</string>
+    <string name="excellent_80">80% Really excellent score! Your score is:</string>
+    <string name="justperfect">/10. It\'s just perfect!</string>
+    <string name="excellent_70">70% Excellent score! Your score is:</string>
+    <string name="dobetter">/10. You can do better! Try again!</string>
+    <string name="welldone_60">60% Well done! Your score is:</string>
+    <string name="tryagain">/10. You can do better! Try again!</string>
+    <string name="goodjob_50">50% Good job! Your score is:</string>
+    <string name="candobetter">/10. You can do better! Try again!</string>
+    <string name="lessthan_30">Less than 30% You are trying. Your score is:</string>
+    <string name="candobeter">/10. You can do better! Try again!</string>
+    <string name="choose_forall">Please choose answer for each question!</string>
+    <string name="youdid">You did this on purpose!</string>
+</resources>
+
+
+

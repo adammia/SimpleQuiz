@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="headerText">16sp</dimen>
+    <dimen name="answerText">14sp</dimen>
+    <dimen name="introText">22sp</dimen>
+    <dimen name="marginVertical">8dp</dimen>
+    <dimen name="cardText">18sp</dimen>
+    <dimen name="rElevation">5dp</dimen>
+    <dimen name="rPadding">0dp</dimen>
+    <dimen name="tPadding">0dp</dimen>
+    <dimen name="tElevation">3dp</dimen>
+    <dimen name="appbarHeight">160dp</dimen>
+    <dimen name="collapsedText">16sp</dimen>
+    <dimen name="expandedText">28sp</dimen>
+</resources>
